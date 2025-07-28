@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- alert : 경고창 띄우기 | alert("경고 문구") 이런식으로 사용.
+         EX)....                                             -->
+        <button onclick="alert('경고창 입니다.')">BTN1</button>
+        <!-- onclick이벤트로 클릭시 alert발생.
+            ""안에 ("TEXT")처럼 ""이 들어가면 오류발생 -> 'TEXT'로 지정 -->
+
+        <button onclick="alert(178+587)">BTN2</button>
+        <!-- 연산식도 가능. ()안에 들어간 모든것은 data임. -->
+
+        <button onclick="alert('경입 \n고니 \n창다.')">BTN3</button>
+        <!-- \n = enter, 줄바꿈기능도 가능 -->
+
+    <hr/> <!-- <hr/> : 줄생성 -->
+    <br/> <!-- <br/> = enter, 줄바꿈 -->
+        <a href="javascript:void(0)">BTN1</a><br/>
+        <!-- a href="javascript:void(0)" = a태그를 클릭해도 상황발생 X -->
+
+        <!-- a태그에는 alert를 바로 사용할 수 없다.
+            a href="javascript: js속성부여" 이런식으로 사용해야함.   -->
+        <a href="javascript:alert('경고창 입니다.')">BTN2</a><br/>
+        <!-- alert속성을 부과하여 a태그를 누를시 경고창 발생 -->
+
+        <a href="javascript:alert(486+032)">BTN3</a><br/>
+        <!-- 이벤트때 처럼 연산도 가능. -->
+        
+        <a href="javascript:console.log(obj)">BTN4</a><br/>
+        <!-- 콘솔로그에서 BTN4를 누르면 obj를 반환(표시). 함수 지정이 안하고 누르면 오류발생 -->
+        <script>
+            // obj 함수 지정.
+            const obj = {"name" : "짱구", "age" : "5", "addr" : "떡잎마을"}
+        </script>
+</body>
+</html>
