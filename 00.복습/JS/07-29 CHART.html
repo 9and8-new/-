@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/경찰정지역별범죄발생건수.js"></script>
+
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div style="width :800px; height: 500px;">
+    <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+    
+        console.log(지역별범죄건수);
+        // 지역별범죄건수 확인
+        const result = 지역별범죄건수.reduce((resultObject, item) => {
+            // 변수지정 : result 변수 = 지역별범죄건수에 resultObject라는곳에 범죄대분류, 범죄중분류, rest를 넣는다
+            const { 범죄대분류, 범죄중분류, ...rest } = item;
+            // 여러변수지정 : 범죄대분류, 범죄중분류, 그외의것은 rest 라는 변수를 만든다
+            const values = Object.values(rest);
+            // 변수지정 : valuse =  Object(객체) rest의 values 값만 저장
+            // Object는 자바스크립트에서 모든 "객체" 관련 기능을 제공하는 기본 도구 / 예약어
+            const item_sum = values.reduce((sum, count) => { return sum + count; }, 0);
+            // 변수지정 : item_sum = 변수values를 0에서부터 sum + count한 값이다. 
+            if (resultObject[범죄대분류] !== undefined) {
+            // 만약 resultObject안에 범죄대분류의 값이 있나?
+                resultObject[범죄대분류] += item_sum;
+                // resultObject안에 있다면 범죄대분류의 key 값에 합을 합연산해라
+            } else {
+                // resultObject안에 범죄대분류 key 값이 없다면 새로추가
+                resultObject[범죄대분류] = item_sum;
+                // resultObject안에 있는 범죄대분류의 값에 resultObject값을 모두 넣어라 (keys:values)
+            }
+            return resultObject;
+            // 그다음 resultObject로 넘겨줌(다음 반복으로 넘겨줌)
+        },{});
+        console.log(result)
+
+
+    </script>
+
+    <!-- <script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(result),
+      datasets: [{
+        label: '# of Votes',
+        data: Object.values(result),
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+ -->
+
+
+
+
+
+</body>
+
+</html>
