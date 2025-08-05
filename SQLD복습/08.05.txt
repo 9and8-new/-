@@ -1,0 +1,351 @@
+Enter password 
+Welcome to the MySQL monitor.  Commands end with ; or g.
+Your MySQL connection id is 14
+Server version 8.0.43 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle andor its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation andor its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or 'h' for help. Type 'c' to clear the current input statement.
+
+mysql create table tbl_std('id' varchar(45) not null, ')
+    ' ;
+    ' ;
+    ' c
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    '
+    ' CREATE DATABASE study;
+    ' SHOW DATABASE
+    ' ;
+    ' SHOW DATABASES;
+    ' SHOW study;
+    ' c
+    ' c
+    ' `
+    ' '
+    - ;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id' varchar(45) not null, ')
+;
+;
+c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE DATABASE study;
+SHOW ' at line 1
+mysql CREATE DATABASE study;
+Query OK, 1 row affected (0.01 sec)
+
+mysql SHOW DATABASES;
++--------------------+
+ Database           
++--------------------+
+ information_schema 
+ mysql              
+ performance_schema 
+ study              
+ sys                
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql CREATE `study`.`tbl_lol`(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - '라인티어' INT NOT NULL);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`study`.`tbl_lol`(
+'챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT ' at line 1
+mysql CREATE study tbl_lol(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - '라인티어' INT NOT NULL);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'study tbl_lol(
+'챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT NULL' at line 1
+mysql CREATE study tbl_lol(
+    - )
+    - ;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'study tbl_lol(
+)' at line 1
+mysql CREATE tbl_lol(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - '라인티어' INT NOT NULL);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_lol(
+'챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT NULL,
+'라' at line 1
+mysql CREATE TABLE tbl_lol(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - CREATE TABLE tbl_lol(
+    - );
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT NULL,
+CREATE TABLE ' at line 2
+mysql CREATE TABLE tbl_lol(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - '라인티어' INT NOT NULL);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT NULL,
+'라인티어' at line 2
+mysql create table tbl_lol(
+    - '챔피언' VARCHAR(10) NOT NULL,
+    - '포지션' VARCHAR(5) NOT NULL,
+    - '라인티어' INT NOT NULL);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''챔피언' VARCHAR(10) NOT NULL,
+'포지션' VARCHAR(5) NOT NULL,
+'라인티어' at line 2
+mysql desc tables;
+ERROR 1046 (3D000) No database selected
+mysql use study;
+Database changed
+mysql CREATE TABLE tbl_lol(
+    - '챔피언' VARCHAR(10) primary key);
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''챔피언' VARCHAR(10) primary key)' at line 2
+mysql create table tbl_lol(
+    - `챔피언` VARCHAR(10) primary key);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql desc tbl_lol;
++-----------+-------------+------+-----+---------+-------+
+ Field      Type         Null  Key  Default  Extra 
++-----------+-------------+------+-----+---------+-------+
+ 챔피언     varchar(10)  NO    PRI  NULL           
++-----------+-------------+------+-----+---------+-------+
+1 row in set (0.00 sec)
+
+mysql ALTER tbl_lol add column `포지션` VARCHAR(5) NOT NULL;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_lol add column `포지션` VARCHAR(5) NOT NULL' at line 1
+mysql ALTER tbl_lol add column '포지션' VARCHAR(5) NOT NULL;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_lol add column '포지션' VARCHAR(5) NOT NULL' at line 1
+mysql ALTER TABLE tbl_lol add column '포지션' VARCHAR(5) NOT NULL;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''포지션' VARCHAR(5) NOT NULL' at line 1
+mysql alter table tbl_lol add column '포지션' varchar(5) not null;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''포지션' varchar(5) not null' at line 1
+mysql use study
+Database changed
+mysql alter table tbl_lol add column '포지션' varchar(5) not null;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''포지션' varchar(5) not null' at line 1
+mysql alter table tbl_lol add column `포지션` varchar(5) not null;
+Query OK, 0 rows affected (0.04 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++-----------+-------------+------+-----+---------+-------+
+ Field      Type         Null  Key  Default  Extra 
++-----------+-------------+------+-----+---------+-------+
+ 챔피언     varchar(10)  NO    PRI  NULL           
+ 포지션     varchar(5)   NO         NULL           
++-----------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql alter table tbl_lol add column `라인티어` int not null;
+Query OK, 0 rows affected (0.03 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 라인티어      int          NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql ALTER TABLE tbl_lol CHANGE COLUMN `라인티어` `현재티어`;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql ALTER TABLE tbl_lol CHAGE COLUMN `현재티어` `라인티어` INT NOT NULL;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CHAGE COLUMN `현재티어` `라인티어` INT NOT NULL' at line 1
+mysql use study
+Database changed
+mysql ALTER TABLE tbl_lol CHANGE COLUMN `라인티어` `현재티어` INT NOT NULL;
+Query OK, 0 rows affected (0.01 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 현재티어      int          NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql use study
+Database changed
+mysql ALTER TABLE tbl_lol `종족` VARCHAR(10) NOT NULL;
+ERROR 1064 (42000) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`종족` VARCHAR(10) NOT NULL' at line 1
+mysql ALTER TABLE tbl_lol ADD COLUMN `종족` VARCHAR(10) NOT NULL;
+Query OK, 0 rows affected (0.03 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 현재티어      int          NO         NULL           
+ 종족          varchar(10)  NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql ALTER TABLE tbl_lol CHANGE COLUMN `종족` `궁극기` VARCHAR(10) NOT NULL;
+Query OK, 0 rows affected (0.01 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 현재티어      int          NO         NULL           
+ 궁극기        varchar(10)  NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql ALTER TABLE tbl_lol DROP COLUMN `궁극기`;
+Query OK, 0 rows affected (0.03 sec)
+Records 0  Duplicates 0  Warnings 0
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 현재티어      int          NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql INSERT INTO tbl_lol VALUES(
+    - `오리아나`, `미드`, 1);
+ERROR 1054 (42S22) Unknown column '오리아나' in 'field list'
+mysql INSERT INTO tbl_lol VALUES(
+    - '오리아나', '미드', 1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql desc tbl_lol;
++--------------+-------------+------+-----+---------+-------+
+ Field         Type         Null  Key  Default  Extra 
++--------------+-------------+------+-----+---------+-------+
+ 챔피언        varchar(10)  NO    PRI  NULL           
+ 포지션        varchar(5)   NO         NULL           
+ 현재티어      int          NO         NULL           
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 오리아나      미드                  1 
++--------------+-----------+--------------+
+1 row in set (0.00 sec)
+
+mysql INSERT INTO tbl_lol VALUES(
+    - '징크스', '원딜', 2),(
+    - '엘리스', '정글', 3);
+Query OK, 2 rows affected (0.01 sec)
+Records 2  Duplicates 0  Warnings 0
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 엘리스        정글                  3 
+ 오리아나      미드                  1 
+ 징크스        원딜                  2 
++--------------+-----------+--------------+
+3 rows in set (0.00 sec)
+
+mysql UPDATE tbl_lol SET `챔피언` = '케이틀린' WHERE `포지션` = `원딜`;
+ERROR 1054 (42S22) Unknown column '원딜' in 'where clause'
+mysql UPDATE tbl_lol SET `챔피언` = '케이틀린' WHERE `포지션` = '원딜';
+Query OK, 1 row affected (0.01 sec)
+Rows matched 1  Changed 1  Warnings 0
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 엘리스        정글                  3 
+ 오리아나      미드                  1 
+ 케이틀린      원딜                  2 
++--------------+-----------+--------------+
+3 rows in set (0.00 sec)
+
+mysql UPDATE tbl_lol SET `챔피언` = '리신' WHERE `포지션` = '정글';
+Query OK, 1 row affected (0.00 sec)
+Rows matched 1  Changed 1  Warnings 0
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 리신          정글                  3 
+ 오리아나      미드                  1 
+ 케이틀린      원딜                  2 
++--------------+-----------+--------------+
+3 rows in set (0.00 sec)
+
+mysql UPDATE tbl_lol SET `현재티어` = 5 WHERE `챔피언` = '리신';
+Query OK, 1 row affected (0.01 sec)
+Rows matched 1  Changed 1  Warnings 0
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 리신          정글                  5 
+ 오리아나      미드                  1 
+ 케이틀린      원딜                  2 
++--------------+-----------+--------------+
+3 rows in set (0.00 sec)
+
+mysql DELETE FROM tbl_lol WHERE `챔피언` = '리신';
+Query OK, 1 row affected (0.00 sec)
+
+mysql SELECT  FROM tbl_lol;
++--------------+-----------+--------------+
+ 챔피언        포지션     현재티어     
++--------------+-----------+--------------+
+ 오리아나      미드                  1 
+ 케이틀린      원딜                  2 
++--------------+-----------+--------------+
+2 rows in set (0.00 sec)
+
+mysql
